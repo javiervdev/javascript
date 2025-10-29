@@ -7,37 +7,29 @@
 </head>
 <body>
     <script>
-        let x1;
-        x1 = 1;
-        while (x1<= 500) {
-            document.write(x1);
-            document.write("<br>");
-            x1 = x1 + 1;
+
+        //Debemos realizar un programa que pida cargar una fecha cualquiera, luego verificar si dicha fecha corresponde a Navidad (se debe cargar por separado el dia, el mes y el año
+
+        //Crear variables
+
+        let day;
+        let month;
+        let year;
+
+        //Crear sistema de entrada de datos
+
+        day = prompt("Ingrese el dia en valor numerico");
+        month = prompt("Ingrese el mes en valor numerico");
+        year = prompt("Ingrese el año en valor numerico");
+
+        //Crear logica para verificar si es navidad
+
+        if(day>=25 && day<=31 || day<=6 && month==12 || month==1 ) {
+            document.write("Esta fecha corresponde a Navidad");
+        } else{
+            document.write("Esta fecha no corresponde a Navidad");
         }
 
-          let x50;
-        x50 = 50;
-        while (x50<= 100) {
-            document.write(x50);
-            document.write("<br>");
-            x50 = x50 + 1;
-        }
-
-            let xmenos50;
-        xmenos50 = -50;
-        while (xmenos50<= 0) {
-            document.write(xmenos50);
-            document.write("<br>");
-            xmenos50 = xmenos50 + 1;
-        }
-
-            let x2;
-        x2 = 2;
-        while (x2<= 100) {
-            document.write(x2);
-            document.write("<br>");
-            x2 = x2 + 2;
-        }
     </script>
 </body>
 </html>
