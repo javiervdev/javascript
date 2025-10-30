@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>exercise_repetitive_structure</title>
+</head>
+<body>
+    <script>
+
+        //Debemos realizar un programa que acumule valores ingresados por teclado hasta ingresar el 9999 (no sumar dicho valor, solamente indica que ha finalizado la carga). 
+        //Imprimir el valor acumulado e informar si dicho valor es cero, mayor a cero o menor a cero.
+
+        //Crear variable
+
+        let number;
+
+        //Crear estructura repetitiva do/while
+        do {
+            number = parseInt(prompt("Ingrese un valor entre 0 y 9999"));
+            document.write("El valor es ");
+            if(number==0){
+                document.write("igual a cero"); 
+            } else{
+                if(number>0){
+                    document.write("mayor a cero");
+                } else {
+                    document.write("menor a cero");
+                }
+            }
+             document.write("<br>");
+        } while(number!=9999)
+        
+    </script>
+</body>
+</html>
