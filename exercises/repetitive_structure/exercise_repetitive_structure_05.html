@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>exercise_repetitive_structure_05</title>
+</head>
+<body>
+    <script>
+
+        //Debemos desarrollar un programa en el que se procesan los datos de las cuentas corrientes de sus clientes.
+        //De cada cuenta corriente se conoce: numero de la cuenta, nombre del cliente y saldo actual.
+        //Se pide confeccionar que lea los datos de las cuentas corrientes de los clientes e informe:
+
+        //A) De cada cuenta: numero de cuenta, nombre del cliente y estado de la cuenta segun su saldo, sabiendo que:
+        //Estado de la cuenta 'Acreedor' si el saldo es >0. 'Deudor' si el saldo es <0. 'Nulo' si el saldo es =0.
+
+		//B) La suma total de los saldos acreedores
+        
+        // Variable para acumular la suma de saldos acreedores
+         let sumaAcreedores = 0;
+         let balance_user;
+
+         //Creamos la estructura do/while
+
+         do {
+        
+            balance_user = parseInt(prompt('Ingrese el saldo de la cuenta (negativo para terminar):'));
+            document.write('Estado de la cuenta: ');
+            if (balance_user > 0) {
+                document.write('Acreedor');
+                sumaAcreedores += balance_user; // sumamos si es acreedor
+            } else if (balance_user == 0) {
+                    document.write('Nulo');
+                 } else {
+                        document.write('Deudor');
+            }
+
+        document.write('<br>');
+
+        } while (balance_user >=0);
+
+        document.write('<br>La suma total de saldos acreedores es: ' + sumaAcreedores);
+    </script>
+</body>
+</html>
