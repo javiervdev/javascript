@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>exercise-repetitive-structure-06</title>
+</head>
+<body>
+    <script>
+        //Se debe recoger informacion de las personas censadas:
+
+        //Numero de documento, edad y sexo
+
+        //Se pide confeccionar un progeama que lea los datos de cada persona censada
+
+         //Para finalizar el programa se debe ingresar cero en el numero de documento.
+
+        //Informar:
+        //Cantidad total de personas censadas: .
+        //Cantidad de Varones .
+        //Cantidad de Mujeres .
+        //Cantidad de Varones cuya edad varia entre 16 y 25 de edad.
+
+        let document_number;
+        let age_user;
+        let sex_user;
+
+        let suma_masculino = 0;
+        let suma_femenino = 0;
+        let suma_jovenes = 0;
+        
+
+
+
+        //Crear sistema de structura repetitiva con DO/WHILE
+
+        do {
+            sex_user=prompt("Ingrese su sexo: Masculino o Femenino");
+                if (sex_user=="Masculino"){
+                    suma_masculino++;
+                    age_user=prompt("Ingrese su edad:")
+                    if (age_user>16 && age_user<25){
+                        (suma_jovenes++);
+                }
+
+                }
+                if (sex_user=="Femenino"){
+                    suma_femenino++;
+                }
+
+            document_number=prompt("Ingrese el numero de documento");
+
+
+        }while(document_number!=0);
+
+        document.write("Cantidad de Varones:")
+        document.write(suma_masculino);
+        document.write("<br>");
+        document.write("Cantidad de Mujeres:")
+        document.write(suma_femenino);
+        document.write("<br>");
+        document.write("Personas Censadas:");
+       
+        let suma_total;
+        suma_total= suma_masculino + suma_femenino;
+
+        document.write(suma_total);
+        document.write("<br>");
+        document.write("Varones jovenes de edad:");
+        document.write(suma_jovenes);
+
+    </script>
+</body>
+</html>
