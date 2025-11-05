@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>exercise-repetitive-structure-07</title>
+</head>
+<body>
+    <script>
+        //Confeccionar un programa que lea 3 pares de datos.
+        //Cada par de datos corresponde a la medida de la base y la altura del triangulo.
+
+        //El programa debera informar:
+        //De cada triangulo la medida de su base, su altura y su superficie.
+        //La cantidad de triangulos cuya superficie es mayor a 12.
+
+        //Variable para contar triangulos
+        let contador_triangulos =0;
+
+        //Bucle para leer 3 triangulos
+        for (let triangulo = 1; triangulo <=3; triangulo++){
+
+        //Pedimos base y altura
+        let base=parseInt(prompt("Ingrese la base del triangulo"));
+        let altura=parseInt(prompt("Ingrese la altura del triangulo"));
+
+        //Calculamos la superficie
+        let superficie=(base*altura) / 2;
+
+        //Mostramos los datos del triangulo.
+        document.write("Base del triangulo: ");
+        document.write(base);
+        document.write("<br>");
+        document.write("Altura del triangulo: ");
+        document.write(altura);
+        document.write("<br>");
+        document.write("Superficie del triangulo: ");
+        document.write(superficie);
+        document.write("<br>");
+
+        if (superficie>12) {
+            contador_triangulos++;
+            }
+        }
+
+        document.write("Triangulos cuya superficie es mayor a 12: ");
+        document.write(contador_triangulos);
+    </script>
+</body>
+</html>
