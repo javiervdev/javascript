@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>exercise-repetitive-structure-08</title>
+</head>
+<body>
+    <script>
+        //Desarrollar un programa que solicite la carga de 10 numeros e imprima la suma de los ultimos 5 valores ingresados.
+
+        let prompt_number=0;
+
+        for(let loop=1; loop<=5; loop++){
+            prompt_number=parseInt(prompt("Ingrese un numero"));
+        }
+
+         for(let loop=1; loop<=5; loop++){
+            prompt_number=parseInt(prompt("Ingrese un numero"));
+            prompt_number= prompt_number + prompt_number + prompt_number + prompt_number;
+            
+        }   
+
+        document.write(prompt_number);
+
+        
+    </script>
+</body>
+</html>
