@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>exercise-conditional-structure-16</title>
+</head>
+<body>
+    <script>
+        //De un postulante a un empleo, que realizo un test de capacitacion, se obtuvo la siguiente informacion:
+        //Nombre del postulante, Cantidad total de preguntas, Cantidad de preguntas que contesto correctamente.
+
+        //Se pide confeccionar un programa que lea los datos del postulante e informe el nivel del mismo segun el porcentaje de respuestas correctas.
+        //Nivel superior: Porcentaje > = 90%
+        //Nivel medio: Porcentaje > = 75% && <90%
+        //Nivel regular: Porcentaje > = 50% && < 75%
+        //Fuera de nivel: Porcentaje < 50%
+
+        let name_user;
+        let answers;
+
+        name_user = prompt("Ingrese el nombre");
+        answers = prompt("Ingrese la cuenta de respuestas correctas de las 10 preguntas");
+
+        answers = parseInt(answers);
+
+        document.write(name_user);
+        document.write(": ");
+
+        if (answers >= 9) {
+            document.write("Nivel Superior")
+        } else {
+            if (answers >= 7.5 && answers < 9){
+                document.write("Nivel medio");
+            } else{
+                if (answers >= 5 && answers < 7.5){
+                    document.write("Nivel regular");
+                } else {
+                    if (answers < 5){
+                        document.write("Fuera de nivel");
+                    }
+                }
+            }
+        }   
+    </script>
+</body>
+</html>
