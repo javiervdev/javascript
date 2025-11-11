@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>exercise-conditional-structure-12</title>
+</head>
+<body>
+    <script>
+        //Se debe desarrollar un programa que pida 3 numeros.
+        //Si todos los valores ingresados son menores a 10, imprimir en la pagina "Todos los numeros son menores a diez"
+
+        let number_01;
+        let number_02;
+        let number_03;
+
+        number_01 = prompt("Ingrese el primer numero");
+        number_02 = prompt("Ingrese el segundo numero");
+        number_03 = prompt("Ingrese el tercer numero");
+
+        number_01 = parseInt(number_01);
+        number_02 = parseInt(number_02);
+        number_03 = parseInt(number_03);
+
+        if(number_01 < 10 && number_02 < 10 && number_03 < 10){
+            document.write("Todos los numeros son menores a diez");
+        }
+        
+    </script>
+</body>
+</html>
