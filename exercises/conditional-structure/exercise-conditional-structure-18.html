@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>exercise-conditional-structure-18</title>
+</head>
+<body>
+    <script>
+        //Se debe desarrollar un programa que nuestre un menu simple al usuario.
+        //El usuario elegira una opcion ingresando un caracter.
+
+        //Requisitos:
+        //A: Abrir Archivo
+        //G: Guardar Archivo
+        //S: Salir Programa
+
+        let command;
+
+        command = prompt("A:Abrir Archivo G: Guardar Arhivo S: Salir Programa");
+
+        switch(command) {
+            case "A":
+                document.write("Abriendo Archivo...");
+                break;
+            case "G":
+                document.write("Guardando Archivo");
+                break;
+            case "S":
+                document.write("Saliendo Archivo");
+                break;
+        }
+    </script>
+</body>
+</html>
