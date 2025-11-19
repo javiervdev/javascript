@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>exercise-functions-01</title>
+</head>
+<body>
+    <script>
+
+        //Se debe desarrollar una función que solicite la carga de dos numeros.
+        //Primero se debera introducir un numero menor
+        //Despues se debera introducir un numero mayor
+        //En caso de que se introduzcan erroneamente debe dar error y pedirlos de nuevo.
+        //Nos lo muestre desde el menor hasta el mayor de uno en uno
+
+        function CargaMayorMenor() {
+            var mayor;
+            var menor;
+
+            do{
+            menor = parseInt(prompt("Ingresa un numero"));
+            mayor = parseInt(prompt("Ingresa un numero mayor al anterior"));
+            } while (menor >= mayor);  
+
+            while(menor <= mayor){
+                document.write(menor);
+                document.write("<br>");
+                menor = menor + 1;
+            }
+
+        }
+
+        CargaMayorMenor();
+
+
+
+        
+    </script>
+</body>
+</html>
