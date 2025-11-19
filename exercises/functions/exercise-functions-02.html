@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>exercise-functions-02</title>
+</head>
+<body>
+    <script>
+        //Se debe desarrollar una funcion la cual solicite el nombre de un usuario y contraseña de un usuario.
+        //Debe verificar si es correcta, en cuyo caso terminara la funcion.
+        //Si no es correcta volvera a pedir hasta que lo sea.
+
+        function verfication(){
+            let user;
+            let passwd;
+
+            do{
+                user = prompt("Ingrese su nombre");
+                passwd = prompt("Ingrese la contraseña");
+            }while (user!="Javier" || passwd!= "123");
+        }
+
+        verfication();
+    </script>
+</body>
+</html>
