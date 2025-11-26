@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>exercise-functions-04</title>
+</head>
+<body>
+    <script>
+            function CargaMayorMenor(mayor, menor) {
+            
+
+            do{
+            menor = parseInt(prompt("Ingresa un numero"));
+            mayor = parseInt(prompt("Ingresa un numero mayor al anterior"));
+            } while (menor >= mayor);  
+
+            while(menor <= mayor){
+                document.write(menor);
+                document.write("<br>");
+                menor = menor + 1;
+            }
+
+        }
+
+        CargaMayorMenor(); 
+    </script>
+</body>
+</html>
