@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>exercise-functions-05</title>
+</head>
+<body>
+    <script>
+        //Se debe desarrollar una funcion a la cual le envie tres numero enteros y retorne el mayor de ellos.
+
+        function DevolverMayor(number_01, number_02, number_03) {
+            if (number_01> number_02 && number_01>number_02){
+                return number_01;
+            } else {
+                if (number_02>number_01 && number_02>number_03){
+                    return number_02;
+                }   else{
+                    return number_03;
+                }
+            } 
+        }
+
+        let show = DevolverMayor(5,2,7);
+        document.write(show);
+    </script>
+</body>
+</html>
